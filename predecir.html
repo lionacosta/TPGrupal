@@ -74,9 +74,9 @@
 
     <script type="text/javascript">
       const g = 6.674*(10^(-11));
-      var m = document.getElementsByClassName("Masa");
-      var d = document.getElementsByClassName("distancia");
-      var v = document.getElementsByClassName("velocidad");
+      var m = document.getElementsByClassName("Masa").value;
+      var d = document.getElementsByClassName("distancia").value;
+      var v = document.getElementsByClassName("velocidad").value;
 
       function calculo() {
         var total = ((d*(v)^2)-(g*m))/(d)^2;
