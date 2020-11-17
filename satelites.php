@@ -38,10 +38,10 @@
             <a class="nav-link config" href="#">CONFIGURACIÓN</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link regis" href="register.html">REGISTRARSE</a>
+            <a class="nav-link regis" href="register.php">REGISTRARSE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link inicio btn btn-outline-success" style="color: green;" href="inicio.html">INICIAR SESIÓN</a>
+            <a class="nav-link inicio btn btn-outline-success" style="color: green;" href="inicio.php">INICIAR SESIÓN</a>
           </li>
           <li class="nav-item">
             <a class="nav-link nav-ce btn btn-outline-danger" href="#">CERRAR SESIÓN</a>
