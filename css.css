@@ -43,6 +43,7 @@ body{
 
 .config, .nav-ce{
   display: none;
+  margin-left: 550px;
 }
 
 .config, .nav-ce, .inicio, .regis{
@@ -59,6 +60,10 @@ body{
 
 .change{
   display: none;
+}
+
+.change2{
+  display: block;
 }
 
 .contenedor{
