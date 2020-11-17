@@ -55,15 +55,15 @@
           <img src="images/formula.png" alt="formula">
           <div class="form-group row pred">
             <label>d = </label>
-            <input class="formula d" type="text" placeholder="valor de la distancia">
+            <input class="formula distancia" type="text" placeholder="valor de la distancia">
           </div>
           <div class="form-group row pred">
             <label>v = </label>
-            <input class="formula v" type="text" placeholder="valor de la velocidad">
+            <input class="formula velocidad" type="text" placeholder="valor de la velocidad">
           </div>
           <div class="form-group row pred">
             <label>M = </label>
-            <input class="formula M" type="text" placeholder="valor de la masa">
+            <input class="formula Masa" type="text" placeholder="valor de la masa">
           </div>
           <div class="form-group row" pred>
             <img style="margin-left: 5px;" src="images/formula2.png">
@@ -74,9 +74,9 @@
 
     <script type="text/javascript">
       const g = 6.674*(10^(-11));
-      var m = document.getElementsByClassName('M');
-      var d = document.getElementsByClassName('d');
-      var v = document.getElementsByClassName('v');
+      var m = document.getElementsByClassName("Masa");
+      var d = document.getElementsByClassName("distancia");
+      var v = document.getElementsByClassName("velocidad");
 
       function calculo() {
         var total = ((d*(v)^2)-(g*m))/(d)^2;
