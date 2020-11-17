@@ -11,6 +11,24 @@
     <title>Predecir</title>
     <link rel ="stylesheet" type = "text/css" href = "css.css">
     <link rel="shortcut icon" href="images/icon.png">
+    <script type="text/javascript">
+
+      function calculo() {
+        const g = 6.674*(10^(-11));
+        var m = document.querySelector('.Masa').value;
+        var d = document.querySelector('.distancia').value;
+        var v = document.querySelector('.velocidad').value;
+        var total = ((d*(v)^2)-(g*m))/(d)^2;
+        if (total > 0) {
+          alert("¡Nos salvamos ya que la fuerza centrifuga fue mayor que la gravitacion! " + total);
+        }
+        else {
+          alert("¡Nos destruirá a todos! ¡Nos destruirá a todos! ¡Nos destruirá a todos! ¡Nos destruirá a todos!");
+          alert("La fuerza gravitacional fue mayor a la centrifuga, esto quiere decir que la gravedad hizo que el meteorito caiga en la tierra :C");
+        }
+      }
+
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background: : #341240;">
@@ -71,24 +89,5 @@
           <input type="submit" value="CALCULAR" class="button" id="predecir" onclick="calculo()">
       </div>
     </form>
-
-    <script type="text/javascript">
-      const g = 6.674*(10^(-11));
-      var m = document.querySelector('.Masa').value;
-      var d = document.querySelector('.distancia').value;
-      var v = document.querySelector('.velocidad').value;
-
-      function calculo() {
-        var total = ((d*(v)^2)-(g*m))/(d)^2;
-        if (total > 0) {
-          alert("¡Nos salvamos ya que la fuerza centrifuga fue mayor que la gravitacion! " + total);
-        }
-        else {
-          alert("¡Nos destruirá a todos! ¡Nos destruirá a todos! ¡Nos destruirá a todos! ¡Nos destruirá a todos!");
-          alert("La fuerza gravitacional fue mayor a la centrifuga, esto quiere decir que la gravedad hizo que el meteorito caiga en la tierra :C");
-        }
-      }
-
-    </script>
   </body>
 </html>
